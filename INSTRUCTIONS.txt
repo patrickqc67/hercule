@@ -1,0 +1,46 @@
+INSTALLATION MANUELLE CODEPHANTOM
+=====================================
+
+Si les scripts .bat ne fonctionnent pas, suivez ces étapes :
+
+1. OUVRIR UNE INVITE DE COMMANDE
+   - Appuyez sur Windows + R
+   - Tapez "cmd" et appuyez sur Entrée
+   - Naviguez vers le dossier CodePhantom :
+     cd "C:\chemin\vers\CodePhantom-Portable-Windows"
+
+2. INSTALLER LES DÉPENDANCES
+   npm install
+
+3. CRÉER LE DOSSIER DE DONNÉES
+   mkdir data
+
+4. DÉMARRER L'APPLICATION
+   npx tsx server/index.ts
+
+5. OUVRIR DANS LE NAVIGATEUR
+   http://localhost:3001
+
+ALTERNATIVE SIMPLE :
+===================
+
+Ou utilisez ces scripts un par un :
+
+1. INSTALL-MANUEL.bat (installation rapide)
+2. CodePhantom.bat (démarrage)
+
+DÉPANNAGE :
+===========
+
+- Si "npm" n'est pas reconnu : installez Node.js depuis https://nodejs.org
+- Si le port 3001 est occupé : l'application s'ouvrira sur un autre port
+- Si erreur de dépendances : supprimez le dossier "node_modules" et relancez "npm install"
+
+FONCTIONNEMENT :
+===============
+
+Une fois démarré, CodePhantom fonctionne exactement comme la version web :
+- Interface identique
+- Tous les outils de développement
+- Base de données locale SQLite
+- Support multi-IA (avec vos clés API)
